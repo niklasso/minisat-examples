@@ -1,0 +1,24 @@
+Overview
+================================================================================
+
+  This is a set of examples of how to use the MiniSat API. While
+  sparsely populated at the moment this is intended to serve as a sort
+  of FAQ for general encoding questions, as well as MiniSat-specific
+  usage issues.
+
+Examples
+================================================================================
+
+  - Minumerate:
+
+    This simple example gives solutions to two frequently recurring
+    encoding patterns: enumerating models and finding minimal
+    models. The default mode of the program is to read a CNF in DIMACS
+    format and either enumerate all models, or only minimal models.
+
+    In this example models are merely counted, but it should be fairly
+    clear how to do further processing. Further, minimal models are
+    defined with respect to the number of true variables. In
+    applications it would be more useful to be able to define
+    minimality with respect to a set of literals to allow minimizing a
+    subset of variables and take polarity into account.
